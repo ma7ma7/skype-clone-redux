@@ -25,6 +25,10 @@ export const state = {
   activeUserId: null,
 };
 
+function randomInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 /**
  * @returns {Object} - a new user object
  */
@@ -32,7 +36,10 @@ export function generateUser() {
   return {
     name: minifaker.name(),
     email: minifaker.email(),
-    profile_pic: minifaker.imageUrlFromPlaceIMG({ width: 200, height: 200 }),
+    profile_pic: minifaker.imageUrlFromPlaceIMG({
+      width: randomInteger(200, 210),
+      height: randomInteger(200, 210),
+    }),
     status: randomSentence({ min: 3, max: 9 }),
     user_id: shortid.generate(),
   };
