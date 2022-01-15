@@ -6,9 +6,14 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "lodash": "^4.17.21",
+    "random-sentence": "^1.0.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
+    "react-scripts": "^3.0.1",
+    "redux": "^4.1.2",
+    "sentence-generator": "^1.0.1",
+    "shortid": "^2.2.16",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
@@ -34,5 +39,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "loadash": "^1.0.0",
+    "minifaker": "^1.33.1",
+    "txtgen": "^3.0.1"
   }
 }
